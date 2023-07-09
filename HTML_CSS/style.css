@@ -1,0 +1,243 @@
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "游ゴシック",YuGothic,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,"MS Ｐゴシック","MS PGothic",sans-serif;
+  color: #333;
+  font-weight: 500;
+}
+
+/* レスポンスデザイン */
+footer {
+    display: none;
+    padding: 20px 36px;
+    position: fixed;
+    background-color: white;
+    background-size: cover;
+    width: 100%;
+}
+
+.footer-sp {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+ul.footer-sp li {
+    list-style: none;
+}
+
+ul.footer-sp li input {
+    float: left;
+}
+
+.header-sp-logo {
+    width: 185px;
+    height: 20px;
+}
+
+.header-logo:hover {
+    opacity: 0.8;
+}
+
+/* ハンバーガーメニュー */
+.menu-btn {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    height: 21px;
+    width: 30px;
+    justify-content: center;
+    align-items: center;
+    z-index: 90;
+    background-color: white;
+    padding: 10px 36px 0 0;
+}
+.menu-btn span,
+.menu-btn span:before,
+.menu-btn span:after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 30px;
+    border-radius: 3px;
+    background-color: #333333;
+    position: absolute;
+}
+.menu-btn span:before {
+    bottom: 10.5px;
+}
+.menu-btn span:after {
+    top: 10.5px;
+}
+
+#menu-btn-check:checked ~ .menu-btn span {
+    background-color: rgba(255, 255, 255, 0);/*メニューオープン時は真ん中の線を透明にする*/
+}
+#menu-btn-check:checked ~ .menu-btn span::before {
+    bottom: 0;
+    transform: rotate(45deg);
+}
+#menu-btn-check:checked ~ .menu-btn span::after {
+    top: 0;
+    transform: rotate(-45deg);
+}
+
+#menu-btn-check {
+    display: none;
+}
+
+/* フッター */
+.flexbox-footer {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 36px 0 36px;
+    line-height: 15px;
+    text-align: center;
+    color: #333333;
+    max-width: 100%;
+    position: relative;
+    box-sizing: border-box;
+    line-height: 15px;
+}
+
+.header-logo {
+    width: 185px;
+    height: 20px;
+    margin-right: auto;
+}
+
+.header-logo:hover {
+    opacity: 0.8;
+}
+
+.header-right {
+    padding-left: 45.8px;
+}
+
+.header-right:hover{
+    opacity: 0.8;
+}
+
+.footer-top {
+    font-size: 14px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+}
+
+.footer-bottom {
+    font-size: 10px;
+    font-weight: 700;
+}
+
+.footerbutton {
+    color: white;
+    background-color: #f79214;
+    font-size: 12px;
+    height: 40px;
+    padding: 0 20px;
+    border-radius: 100vh;
+    border: none;
+}
+
+/* 本文TOP */
+
+.top-left-button {
+    color: white;
+    background-color: #f79214;
+    font-size: 16px;
+    height: 64px;
+    width: 306px;
+    padding: 0 20px;
+    border-radius: 100vh;
+    border: none;
+}
+
+.top-left-button:hover{
+    opacity: 0.8;
+}
+
+.top-right-button {
+    color: #333333;
+    background-color: white;
+    font-weight: 700;
+    font-size: 16px;
+    height: 64px;
+    width: 176px;
+    padding: 0 20px;
+    border-radius: 100vh;
+    border: 1px solid #e0e0e0;
+}
+
+.top-right-button:hover{
+    opacity: 0.8;
+}
+
+.caution {
+    color: #a2a2a4;
+    font-size: 12px;
+    padding: 50px 0 28px 0;
+    line-height: 1.5;
+}
+
+/* レッスン説明 */
+.lesson-wrapper {
+    background-color: #f79214;
+    background-size: cover;
+    color: white;
+    padding: 44px 0;
+}
+
+.lesson-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    list-style: none;
+    max-width: 1040px;
+    margin: auto;
+}
+.About_video {
+    max-width: 520px;
+    height: 292.5px;
+    display: block;
+}
+
+.lesson-wrapper-left {
+    padding-left: 32px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.lesson-wrapper-left h2 {
+    font-size: 38px;
+    letter-spacing: 3.8px;
+    padding: 0 0 10px 0;
+}
+
+.lesson-font {
+    font-family: 'Lato', sans-serif;
+}
+
+.lesson-wrapper-left p {
+    font-size: 16px;
+    font-weight: 700;
+    padding-top: 10px;
+    padding-bottom: 16px;
+    line-height: 26px;
+    max-width: 480.73px;
+    overflow-wrap: break-word;
+    word-break: break-word;
+}
+
+.lesson-wrapper-left a {
+    font-size: 18px;
+}

@@ -1,0 +1,161 @@
+/* 1080px以下 */
+@media all and (max-width: 1080px) {
+    .flexbox-footer {
+        display: none;
+    }
+
+    footer {
+        display: block;
+    }
+
+    .lesson-list {
+        display: flex; 
+        justify-content: center;
+        align-content: center;
+        margin: auto;
+    }
+
+    .About_video {
+        margin: auto;
+    }
+
+    .lesson-wrapper-left {
+        padding-left: 0;
+        margin: auto;
+    }
+}
+
+/* 768px以上 */
+@media all and (min-width: 768px) {
+    .top-wrapper {
+        background-image: url(img/top-hero.webp);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top center;
+        width: 100%;
+        height: 100%;
+    }
+
+    .container {
+        width: 1140px;
+        padding: 0 50px;
+        margin: auto;
+    }
+
+    .copy-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 500px;
+    }
+    
+    h1 {
+        text-align: center;
+        font-size: 38px;
+        line-height: normal;
+        padding-top: 35px;
+        font-family: 'Lato', sans-serif;
+    }
+    .flexbox-top {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 0 15px 0;
+    }
+    
+    .first-view-left,.first-view-right {
+        width: 127px;
+        height: 126px;
+    }
+    
+    .first-view-center {
+        width: 199.58px;
+        height: 199.58px;
+        margin: 0 8px 0 8px;
+    }
+    
+    .top-button {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+/* 767px以下 */
+@media all and (max-width: 767px) {
+    footer {
+        padding: 15px 20px;
+    }
+
+    .header-sp-logo {
+        width: 148px;
+        height: 16px;
+    }
+
+    .menu-btn {
+        padding: 15px 20px 0 0;
+    }
+
+    .top-wrapper {
+        background-image: url(img/top-hero-sp.jpg.webp);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top center;
+        width: 100%;
+        height: 100%;
+        padding-top: 51px;
+    }
+
+    .container {
+        max-width: none;
+        padding: 0 20px;
+        margin: auto;
+    }
+
+    .copy-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 100%;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 25px;
+        line-height: normal;
+        padding-top: 235px;
+        font-family: 'Lato', sans-serif;
+    }
+
+    .flexbox-top {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 0 15px 0;
+    }
+    
+    .first-view-left,.first-view-right {
+        max-width: 199.92px;
+        max-height: 290.8px;
+    }
+    
+    .first-view-center {
+        max-width: 290.8px;
+        max-height: 290.8px;
+        margin: 0 8px 0 8px;
+    }
+
+    .top-button {
+        list-style: none;
+    }
+
+    .top-right-button {
+        display: none;
+    }
+
+    .top-left-button {
+        width: 100% !important;
+    }
+}
